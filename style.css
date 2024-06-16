@@ -1,0 +1,46 @@
+/* color pallete dark-blue, gray, black, text-color */
+:root{
+    --dark-blue: #003366;
+    --gray: #666666;
+    --dark-gray:rgb(37,37,37);
+    --black: #000000;
+    --text-color: #ffffff;
+    --myFont: 'Popins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--myFont);
+    /* height: 100vh; //view port hight => mesure of the window that we are currently using */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-gray);
+    display: flex;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-container button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark-blue);
+    color: var(--text-color);
+    cursor: pointer;
+    font-family: var(--myFont);
+}
