@@ -42,7 +42,7 @@ body{
 }
 .button-container button{
     padding: 0.5rem 1rem;
-    border: 1px solid #000;
+    border: none;
     outline: none;
     border-radius: 5px;
     background: linear-gradient(to top,var(--dark-blue),#575757);
@@ -54,4 +54,10 @@ body{
 }
 .button-container button:hover{
     background: linear-gradient(to bottom,var(--dark-blue),#575757);
+}
+
+.button-container button:active{
+   transform: translateY(3px); /* this meand that when we place the button it will go down by three pixels */
+   box-shadow:0 6px 6px 0 rgba(0, 0, 0, 0.3) ;
+   border: 1px solid #000;
 }
